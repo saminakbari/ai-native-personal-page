@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Personal record",
+  "description": "Facts the page may state. x-visible=true: visitors may see it and the model may use it. x-visible=false: never sent to the model or to visitors.",
+  "type": "object",
+  "required": ["profile", "education", "experience", "courses", "projects", "skills", "limits"],
+  "x-visible": true,
+  "properties": {
+    "profile": {
+      "type": "object",
+      "x-visible": true,
+      "required": ["name", "headline", "location", "languages"],
+      "properties": {
+        "name": { "type": "string" },
+        "headline": { "type": "string" },
+        "location": { "type": "string" },
+        "languages": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "level"],
+            "properties": { "name": { "type": "string" }, "level": { "type": "string" } }
+          }
+        },
+        "contact": {
+          "type": "object",
+          "required": ["email", "phone", "linkedin"],
+          "properties": {
+            "email": { "type": "string" },
+            "phone": { "type": "string" },
+            "linkedin": { "type": "string", "format": "uri" }
+          }
+        }
+      }
+    },
+    "honors": {
+      "type": "array",
+      "x-visible": true,
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "year", "result"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "year": { "type": "string" },
+          "result": { "type": "string" }
+        }
+      }
+    },
+    "education": {
+      "type": "array",
+      "x-visible": true,
+      "items": {
+        "type": "object",
+        "required": ["id", "institution", "degree", "location", "start", "end"],
+        "properties": {
+          "id": { "type": "string" },
+          "institution": { "type": "string" },
+          "degree": { "type": "string" },
+          "location": { "type": "string" },
+          "start": { "type": "string", "description": "YYYY-MM" },
+          "end": { "type": "string" }
+        }
+      }
+    },
+    "experience": {
+      "type": "array",
+      "x-visible": true,
+      "items": {
+        "type": "object",
+        "required": ["id", "company", "title", "start", "end", "highlights"],
+        "properties": {
+          "id": { "type": "string" },
+          "company": { "type": "string" },
+          "title": { "type": "string" },
+          "start": { "type": "string" },
+          "end": { "type": "string" },
+          "highlights": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "courses": {
+      "type": "array",
+      "x-visible": true,
+      "items": {
+        "type": "object",
+        "required": ["id", "name"],
+        "description": "Course names only. No grades, units, terms or instructors.",
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" }
+        }
+      }
+    },
+    "projects": {
+      "type": "array",
+      "x-visible": true,
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "date", "stack", "course_ids", "summary"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "date": { "type": "string", "description": "YYYY-MM" },
+          "stack": { "type": "array", "items": { "type": "string" } },
+          "course_ids": { "type": "array", "items": { "type": "string" }, "description": "References courses[].id" },
+          "summary": { "type": "string" },
+          "notes": { "type": "string", "description": "Known ambiguity in the source" }
+        }
+      }
+    },
+    "skills": {
+      "type": "object",
+      "x-visible": true,
+      "additionalProperties": { "type": "array", "items": { "type": "string" } }
+    },
+    "academic_service": {
+      "type": "array",
+      "x-visible": true,
+      "items": { "type": "string" }
+    },
+    "limits": {
+      "type": "object",
+      "x-visible": true,
+      "required": ["wont_discuss", "cannot_do", "assumptions", "known_gaps"],
+      "properties": {
+        "assumptions": { "type": "array", "items": { "type": "string" }, "description": "Closed-world rule: unlisted knowledge is treated as unknown" },
+        "wont_discuss": { "type": "array", "items": { "type": "string" } },
+        "cannot_do": { "type": "array", "items": { "type": "string" } },
+        "known_gaps": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "private": {
+      "type": "object",
+      "x-visible": false,
+      "description": "Owner-only facts. Stripped before any model call or API response.",
+      "properties": {
+        "gpa": { "type": "string" }
+      }
+    }
+  }
+}

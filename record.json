@@ -1,0 +1,219 @@
+{
+  "profile": {
+    "name": "Samin Akbari",
+    "headline": "Computer Engineering student at Sharif University of Technology and backend software engineer",
+    "location": "Tehran, Iran",
+    "languages": [
+      { "name": "Persian (Farsi)", "level": "Native" },
+      { "name": "English", "level": "Fluent" }
+    ],
+    "contact": {
+      "email": "saminakbari.e@gmail.com",
+      "phone": "(+98) 933 5302 734",
+      "linkedin": "https://linkedin.com/in/saminakbari"
+    }
+  },
+  "honors": [
+    {
+      "id": "konkur-2022",
+      "name": "National University Entrance Exam of Iran (Konkur)",
+      "year": "2022",
+      "result": "Ranked 55th among more than 140,000 participants (top 0.03%)"
+    }
+  ],
+  "education": [
+    {
+      "id": "sut-bsc",
+      "institution": "Sharif University of Technology",
+      "degree": "B.Sc. in Computer Engineering",
+      "location": "Tehran, Iran",
+      "start": "2022-09",
+      "end": "2027-01 (expected)"
+    },
+    {
+      "id": "farzanegan-diploma",
+      "institution": "Farzanegan 7 High School",
+      "degree": "Diploma in Mathematics and Physics",
+      "location": "Tehran, Iran",
+      "start": "2019-07",
+      "end": "2022-09"
+    }
+  ],
+  "experience": [
+    {
+      "id": "triboon",
+      "company": "Triboon Company",
+      "title": "Software Engineer",
+      "start": "2024-07",
+      "end": "present",
+      "highlights": [
+        "Designed, developed and maintained scalable RESTful APIs with Django REST Framework for the core backend of Triboon Panel.",
+        "Worked with PostgreSQL, Redis, Celery and RabbitMQ to build reliable, high-performance services.",
+        "Implemented backend features, designed database schemas, built admin functionality, and extended Triboon's Telegram bot with new commands and callback-based workflows.",
+        "Refactored legacy modules to improve maintainability and code quality.",
+        "Primary backend developer for a new advertising platform connecting brands with influencers, media channels and websites; built the core services and APIs from scratch with Django REST Framework.",
+        "Worked with Docker, Kubernetes, Linux, AWS S3 and CI/CD pipelines (GitLab CI, GitHub Actions)."
+      ]
+    }
+  ],
+  "courses": [
+    { "id": "general-mathematics-1", "name": "General Mathematics 1" },
+    { "id": "general-mathematics-2", "name": "General Mathematics 2" },
+    { "id": "physics-1", "name": "Physics 1" },
+    { "id": "physics-2", "name": "Physics 2" },
+    { "id": "physics-2-lab", "name": "Physics 2 Lab" },
+    { "id": "linear-algebra", "name": "Linear Algebra" },
+    { "id": "engineering-statistics-probability", "name": "Engineering Statistics and Probability" },
+    { "id": "discrete-structures", "name": "Discrete Structures" },
+    { "id": "computer-workshop", "name": "Computer Workshop" },
+    { "id": "fundamentals-of-programming", "name": "Fundamentals of Programming" },
+    { "id": "advanced-programming", "name": "Advanced Programming" },
+    { "id": "data-structures-algorithms", "name": "Data Structures and Algorithms" },
+    { "id": "logic-circuits", "name": "Logic Circuits" },
+    { "id": "electrical-electronic-circuits", "name": "Fundamentals of Electrical and Electronic Circuits" },
+    { "id": "computer-structure-languages", "name": "Computer Structure and Languages" },
+    { "id": "computer-architecture", "name": "Computer Architecture" },
+    { "id": "digital-systems-design", "name": "Digital Systems Design" },
+    { "id": "database-design", "name": "Database Design" },
+    { "id": "compiler-design", "name": "Compiler Design" },
+    { "id": "theory-of-languages-machines", "name": "Theory of Languages and Machines" },
+    { "id": "operating-systems", "name": "Operating Systems" },
+    { "id": "computer-networks", "name": "Computer Networks" },
+    { "id": "signals-and-systems", "name": "Signals and Systems" },
+    { "id": "data-network-security", "name": "Data and Network Security" },
+    { "id": "real-time-systems", "name": "Real-Time Systems" },
+    { "id": "advanced-computer-concepts", "name": "Advanced Computer Concepts" },
+    { "id": "artificial-intelligence", "name": "Artificial Intelligence" },
+    { "id": "machine-learning", "name": "Machine Learning" },
+    { "id": "data-analysis", "name": "Data Analysis" },
+    { "id": "software-engineering", "name": "Software Engineering" },
+    { "id": "systems-analysis-design", "name": "Systems Analysis and Design" },
+    { "id": "architecture-design", "name": "Architecture Design" },
+    { "id": "web-programming", "name": "Web Programming" },
+    { "id": "mobile-programming", "name": "Mobile Programming" },
+    { "id": "computer-engineering-internship", "name": "Computer Engineering Internship" },
+    { "id": "specialized-computer-language", "name": "Specialized Computer Language" },
+    { "id": "scientific-technical-presentation", "name": "Scientific and Technical Presentation" },
+    { "id": "foreign-language", "name": "Foreign Language" },
+    { "id": "persian-literature", "name": "Introduction to Persian Literature" },
+    { "id": "physical-education", "name": "Physical Education" },
+    { "id": "family-and-population-knowledge", "name": "Family and Population Knowledge" },
+    { "id": "islamic-ethics", "name": "Islamic Ethics" },
+    { "id": "islamic-political-social-law", "name": "Islamic Political and Social Law" },
+    { "id": "history-of-imamate", "name": "History of the Imamate" },
+    { "id": "islamic-revolution-of-iran", "name": "Islamic Revolution of Iran" },
+    { "id": "thematic-interpretation-of-quran", "name": "Thematic Interpretation of the Quran" }
+  ],
+  "projects": [
+    {
+      "id": "la-noire",
+      "name": "L.A. Noire",
+      "date": "2025-12",
+      "stack": ["Django", "Django REST Framework", "django-filter", "PyJWT", "PostgreSQL", "Docker"],
+      "course_ids": ["web-programming"],
+      "summary": "A noir-style full-stack web application inspired by the Rockstar game L.A. Noire, built as a Web Programming course project. It emphasizes clean architecture and production-ready engineering, with JWT-based authentication, a focus on maintainability, scalability and deployment readiness."
+    },
+    {
+      "id": "lost-and-found",
+      "name": "Lost&Found",
+      "date": "2025-12",
+      "stack": ["Django", "Django REST Framework", "PostgreSQL", "SQLite", "Docker"],
+      "course_ids": ["systems-analysis-design"],
+      "summary": "Backend for a location-based web application for reporting and locating lost items on the SUT campus map, built for a Systems Analysis and Design course. RESTful APIs were implemented with Django REST Framework.",
+      "notes": "The CV names SQLite in the project header and PostgreSQL in the description, so the record does not say which one is used."
+    },
+    {
+      "id": "rabbitmq",
+      "name": "RabbitMQ",
+      "date": "2026-03",
+      "stack": ["FastAPI", "SQLite"],
+      "course_ids": [],
+      "summary": "A simplified RabbitMQ-inspired message broker built with Clean Architecture, focusing on modular design, maintainability and separation of concerns."
+    },
+    {
+      "id": "link-shortener",
+      "name": "Link-Shortener",
+      "date": "2026-04",
+      "stack": ["FastAPI", "SQLite"],
+      "course_ids": [],
+      "summary": "A URL shortening service designed with Domain-Driven Design and CQRS to separate reads and writes. An event-driven architecture gives asynchronous communication between loosely coupled components, improving scalability and maintainability."
+    },
+    {
+      "id": "database-project",
+      "name": "Database Project",
+      "date": "2024-05",
+      "stack": ["SQL"],
+      "course_ids": [],
+      "summary": "Database schema design for a trip reservation system, with an Entity-Relationship Diagram and design documentation. The relational database was implemented in SQL with tables, relationships, constraints and normalization. Queries support booking transportation tickets, reserving hotels and retrieving travel information."
+    },
+    {
+      "id": "computer-structure-languages",
+      "name": "Computer Structure and Languages Project",
+      "date": "2024-01",
+      "stack": ["IBM Assembly", "x86 Assembly"],
+      "course_ids": ["computer-structure-languages"],
+      "summary": "An Assembly application that does arithmetic on arbitrary-precision integers larger than the processor's register size, plus Gaussian elimination in Assembly to solve systems of linear equations. It emphasizes low-level memory management and efficient matrix handling."
+    },
+    {
+      "id": "mobile-exercises",
+      "name": "Mobile Programming Exercises",
+      "date": "2024-04",
+      "stack": ["Java", "XML"],
+      "course_ids": ["mobile-programming"],
+      "summary": "Several Android applications written in Java and XML for a mobile development course, including a calculator, a Tic-Tac-Toe game and various user interface exercises."
+    },
+    {
+      "id": "stronghold-crusaders",
+      "name": "Stronghold Crusaders",
+      "date": "2024-04",
+      "stack": ["Java", "JavaFX"],
+      "course_ids": [],
+      "summary": "A strategy game inspired by Stronghold Crusader, with core gameplay mechanics and an interactive graphical interface. It uses the Model-View-Controller pattern for a modular, maintainable and extensible codebase."
+    }
+  ],
+  "skills": {
+    "programming_languages": ["Java", "Python", "SQL", "x86 Assembly", "IBM Assembly"],
+    "backend": ["Django", "Django REST Framework", "Celery", "JWT Authentication"],
+    "databases_and_caching": ["PostgreSQL", "Redis"],
+    "architecture_and_design": [
+      "Clean Architecture",
+      "Domain-Driven Design (DDD)",
+      "CQRS",
+      "Event-Driven Architecture",
+      "MVC",
+      "RBAC",
+      "Microservice Architecture"
+    ],
+    "devops_and_tools": ["Git", "Docker", "Kubernetes", "Postman", "Swagger"]
+  },
+  "academic_service": [
+    "Member of Content Team, 10th Winter Seminar Series (WSS), Sharif University of Technology",
+    "Member of Content Team, 11th Winter Seminar Series (WSS), Sharif University of Technology"
+  ],
+  "limits": {
+    "wont_discuss": [
+      "Grades and GPA",
+      "Salary expectations",
+      "Personal life, family and other people",
+      "Opinions about Sharif University of Technology or past employers"
+    ],
+    "cannot_do": [
+      "Send email or messages on my behalf",
+      "Book meetings or interviews",
+      "Speak for Sharif University of Technology or Triboon",
+      "Make hiring, salary or availability commitments"
+    ],
+    "assumptions": [
+      "Anything I know is listed in this record or on my GitHub. A skill, tool, technology or subject that appears in neither is something I do not know."
+    ],
+    "known_gaps": [
+      "The record lists no machine-learning project, only Artificial Intelligence, Machine Learning and Data Analysis as courses.",
+      "The record lists no frontend framework experience.",
+      "The record lists no cloud certifications.",
+      "The record lists no grades or per-course results."
+    ]
+  },
+  "private": {
+    "gpa": "17.48/20.00"
+  }
+}
